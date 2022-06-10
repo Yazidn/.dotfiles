@@ -1,0 +1,17 @@
+#!/bin/sh
+
+DaySuffix() {
+    case `date +%d` in
+          01|21|31) echo "st";;
+          02|22)    echo "nd";;
+          03|23)    echo "rd";;
+          *)        echo "th";;
+    esac
+}
+
+while true; do
+  my_date=$(date "+%A, %B %d`DaySuffix`, %Y  %H:%M")
+  xsetroot -name "$my_date"
+	sleep 10
+done
+
