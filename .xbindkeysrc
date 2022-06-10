@@ -1,0 +1,69 @@
+######## Programs ########
+# Telegram
+"telegram-desktop"
+	Mod4 + t
+
+# Firefox
+"firefox"
+	Mod4 + f
+
+# File Manager
+"st -e nnn -cod"
+	Mod4 + e
+
+# Journaling
+"st -e jr"
+	Mod4 + j
+
+# Wiki
+"st -e vim ~/.wiki/index.wiki"
+	Mod4 + w
+
+# Games
+"gamer"
+    Mod4 + g
+
+# Kodi
+"kodi"
+    Mod4 + k
+
+# cmus
+"st -e cmus"
+		Mod4 + m
+
+# Flux
+"flux"
+    Mod4 + p
+
+######## Actions ########
+# Lock session
+"slock"
+	Mod4 + l
+
+# Clipboard Operations
+"cb"
+	Mod4 + c
+
+# Screenshot
+"prs"
+	Print
+
+# Region Screenshot
+"prs_reg"
+	Mod4 + Print
+
+# Random Wallpaper (1: SFW)
+"feh --bg-fill -rz ~/Pictures/Wallpapers/SFW/"
+	Mod4 + KP_End
+    
+# Random Wallpaper (2: NSFW)
+"feh --bg-fill -rz ~/Pictures/Wallpapers/NSFW/"
+	Mod4 + KP_Down
+
+# Kill Processes
+"/usr/local/bin/killerbee"
+    Mod4 + x
+
+# Emojis
+"dmenu-unicode"
+	Mod4 + comma

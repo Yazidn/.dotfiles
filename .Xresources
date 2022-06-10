@@ -1,0 +1,12 @@
+! GENERAL !
+Xft.dpi: 90
+
+! DWM !
+#define fgcolor  #ffffff
+
+dwm.normbgcolor: #000000
+dwm.selbgcolor: #000000
+dwm.selbordercolor: #005577
+dwm.normbordercolor: #444444
+dwm.normfgcolor: fgcolor 
+dwm.selfgcolor: fgcolor

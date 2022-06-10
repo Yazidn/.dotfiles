@@ -1,0 +1,171 @@
+filter alt
+filter 
+filter jp
+fset jp=genre="J-pop/J-rock"
+filter fset jp=genre="J-pop/J-rock"
+filter edm
+update-cache 
+add Music/
+filter pop
+set aaa_mode=all
+set aaa_mode=artist
+filter artist="soolking"|artist="*gerino*"
+filter rap
+filter genre="j-pop"|genre="j-rock"
+filter inst
+filter edm|pop|alt|rap
+set aaa_mode=0
+set aaa_mode=1
+set aaa_mode=3
+set aaa_mode=2
+set aaa_mode=library
+toggle mouse
+toggle play_sorted
+toggle play_library
+ad
+filter rai
+filter artist="luke"
+filter artist="bb brunes"
+filter !classical
+filter pop|edm
+filter ed
+filter J-pop
+filter jpop
+filter metal
+filter rock
+pl-create Best Melodic Dubstep Mix (2014)
+filter slow
+add Mus
+add 
+filter artist="daft punk"
+filter rai|rap|pop|alt|inst|edm
+filter rap | rai
+2
+filter ins
+filter instr
+filter filename="*grissini*"
+pl-create Synthwave
+pl-create City Pop
+filter genre="j-rock"
+filter genre="j-pop"
+pl-create J-pop & J-rock
+pl-create Niizar Remixes
+filter filename="*niizar*"
+pl-create Favorites
+filter filename="*acoustic*"
+upd
+pl-export Remixes
+pl-export 
+fset inst=genre="Instrumental"
+filter fset inst=genre="instrumental"
+filter genre="instrumental"
+fset inst=genre="intrumental"
+filter filename="*remix*"
+pl-create Remixes
+filter filename="*Alexi Blue*"
+pl-create Alexi Blue Rewrites & Covers
+pl-create
+pl-create Leroy Sanchez Covers
+pl-create "Leroy Sanchez Covers"
+filter filename="*leroy*"
+filter electronic
+filter artist="*japonais*"
+filter artist="japonais"
+fset rap=genre="Hip Hop"
+filter metal|rock
+fset metal=genre="metal"
+add ~/Music/
+filter alt | pop
+filter pop&alt
+filter pop & alt
+filter alt & pop
+filter rock & slow
+filter pop & slow
+filter rai & slow
+filter rai slow
+filter remix
+filter missing-tag
+help
+pl-rename
+filter 50s
+fset 50s=genre="1950s"
+filter artist="the weeknd"
+fset remix=filename="*Remix*"
+fset slow=filename="*Slowed*"
+fset alt=genre="Alternative/Indie"
+fset edm=genre="Electronic"
+fset rock=genre="Rock"
+fset pop=genre="Pop"
+factivate
+fset rai=genre="Raï"
+filter classical
+fset classical=genre="Classical"
+filter genre="alternative/indie"
+filter filename="*Slowed*"
+filter filename"*Slowed*"
+filter filename"*slowed*"
+filter genre="electronic"
+shell
+clear
+filter genre="classical"
+q!
+disable MPRIS
+filter genre="rock"
+filter play_count=0
+filter genre="Instrumental"
+filter genre="insturmental"
+filter genre="pop"
+filter genre="Rock"
+filter genre="50s"
+filter filename="*alexi blue*"
+filter filename="*alexi*"
+filter title="*alexi*"
+filter title="*rewrite*"
+filter title="*alexi"
+filter filename="*alexi"
+filter artist="eden"
+filter artist="EDEN"
+filter genre="ambient"
+colorscheme jellybeans
+colorscheme zenburn
+colorscheme xterm-white
+colorscheme solarized-light
+colorscheme solarized-dark
+colorscheme night
+colorscheme gruvbox-warm
+colorscheme gruvbox-alt
+colorscheme gruvbox
+colorscheme green-mono-88
+colorscheme green
+colorscheme gray-88
+colorscheme dracula
+colorscheme default
+colorscheme cyan
+colorscheme amazon
+filter genre="Jpop"
+filter genre="jRock"
+filter genre="JRock"
+filter genre="Jrock"
+filter genre="jrock"
+add ~/M
+filter filename="*slowed*"
+filter filename="*80s*"
+player-prev
+filter genre="Electronic"
+filter genre="Folk"
+filter
+filter none
+filter artist="Tame Impala"
+filter artist="Tom Odell"
+update
+filter genre="Electronics"
+!filter genre="all"
+!filter genre=""
+filter genre=""
+filter genre="Raï"
+filter genre="Rai"
+filter all
+filter genre=Electronic
+pl-create New School Hip Hop
+add Mu
+fset classical=genre=""
