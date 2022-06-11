@@ -1,0 +1,59 @@
+#!/bin/sh
+
+menu(){
+    printf "1. Download a file\n"
+    printf "2. Download an audio file\n"
+    printf "3. Download a video\n"
+    printf "4. Stream a video/audio\n"
+    printf "5. Clone git repository\n"
+    printf "6. Save screenshot/image\n"
+    printf "\n\n\n\n\n\n\n\n\n"
+}
+
+spell_failed(){
+    notify-send "Failed to execute operation."
+}
+
+choice=$(menu | dmenu -i -c -l 15 | cut -d. -f1)
+#choice=$(menu | dmenu -i -l 10 | cut -d. -f1)
+cbtext=$(xclip -o -selection clipboard)
+
+case $choice in
+    1)
+	wget -P ~/Downloads $cbtext &&
+	    notify-send "File has been downloaded to ~/dl" ||
+		spell_failed
+	break
+	;;
+    2)
+			yt-dlp --audio-format best -x --output "~/Desktop/_/%(title)s.%(ext)s" "$cbtext" &&
+		notify-send "Audio has been downloaded to ~/Desktop/_" ||
+	       	spell_failed
+	break
+	;;
+    3)
+	yt-dlp --output "~/Videos/%(title)s" "$cbtext" &&
+	       	notify-send "Video has been downloaded to ~/Videos" ||
+	       	spell_failed
+	break
+	;;
+    4)
+	mpv "$cbtext" &&
+        notify-send "Streaming has been terminated." ||
+        spell_failed
+	break
+	;;
+    5)
+    	git -C ~/Downloads clone "$cbtext" &&
+	       	notify-send "Github repository has been cloned to ~/dl" ||
+	       	spell_failed	    
+	break
+	;;
+    6)
+	file=$(date +"%Y_%m_%d_%I_%M_%p")
+	xclip -selection clipboard -t image/png -o > $HOME/pix/save/$file.png &&
+        notify-send "Image has been saved to ~/Pictures/Saved" ||
+        spell_failed
+	break
+	;;
+esac

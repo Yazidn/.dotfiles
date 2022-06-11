@@ -1,0 +1,22 @@
+#!/bin/sh
+
+games_list() {
+  printf "1. Pro Evolution Soccer 2013\n"
+  printf "2. Kerbal Space Program\n"
+  printf "\n\n\n\n\n\n\n\n\n\n\n\n\n"
+}
+
+game_to_run=$(games_list | dmenu -c -i -l 15 | cut -d. -f1)
+
+case $game_to_run in
+  1)
+    cd "/home/yazid/.wine/drive_c/Program Files (x86)/R.G. Mechanics/Pro Evolution Soccer 2013"
+    wine pes2013.exe
+    break
+    ;;
+  2)
+    cd /opt/ksp-1.11/ && /opt/ksp-1.11/start.sh || fail_to_run_game "Kerbal Space Program"
+    break
+    ;;
+esac
+    

@@ -1,0 +1,1 @@
+kill -15 $(ps -u $USER -o pid,%mem,%cpu,comm | sort -b -k2 -r | sed -n '1!p' | dmenu -c -i -l 15 | awk '{print $1}') && notify-send "Process successfully killed."
