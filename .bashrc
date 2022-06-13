@@ -5,7 +5,7 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-export PATH="/home/yazid/.local/bin:$PATH"
+export PATH="/home/$USER/.local/bin:$PATH"
 
 alias ls='ls --color=auto'
 alias la='ls -A --color=auto'
